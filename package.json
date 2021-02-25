@@ -1,0 +1,75 @@
+{
+  "name": "buhori",
+  "version": "1.0",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.14.1",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/push-notification-ios": "^1.8.0",
+    "@react-native-firebase/analytics": "^10.8.1",
+    "@react-native-firebase/app": "^10.8.1",
+    "@react-native-firebase/crashlytics": "^10.8.1",
+    "@react-native-firebase/messaging": "^10.8.1",
+    "@react-navigation/bottom-tabs": "^5.11.8",
+    "@react-navigation/native": "^5.9.3",
+    "@react-navigation/stack": "^5.14.3",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.21.1",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-device-info": "^8.0.1",
+    "react-native-dotenv": "^2.5.3",
+    "react-native-gesture-handler": "^1.10.2",
+    "react-native-mmkv-storage": "^0.4.3",
+    "react-native-push-notification": "^3.1.1",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.17.1",
+    "react-native-vector-icons": "^8.1.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/": "react-navigation/tabs",
+    "@types/jest": "^25.2.3",
+    "@types/react-native": "^0.63.2",
+    "@types/react-native-push-notification": "^7.0.1",
+    "@types/react-native-vector-icons": "^6.4.6",
+    "@types/react-navigation": "^3.4.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "resolutions": {
+    "@types/react": "^16"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

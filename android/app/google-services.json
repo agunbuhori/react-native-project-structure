@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "985605407661",
+    "firebase_url": "https://madinah-id.firebaseio.com",
+    "project_id": "madinah-id",
+    "storage_bucket": "madinah-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985605407661:android:905b1ae6ada7d320889724",
+        "android_client_info": {
+          "package_name": "com.buhori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985605407661-tfa73tmuuh4sr1jigich88i7jsi339au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDziW-kFU6q54GBIb7U8xH6COhbSw1bxiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985605407661-tfa73tmuuh4sr1jigich88i7jsi339au.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
