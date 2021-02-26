@@ -16,6 +16,7 @@ const setup = async () => {
     .then((result: any) => {
         if (result) {
             messaging().unsubscribeFromTopic(PREV_VERSION.toString());
+            messaging().unregisterDeviceForRemoteMessages();
             AsyncStorage.removeItem('setup' + PREV_VERSION);
         }
     })
@@ -24,6 +25,7 @@ const setup = async () => {
     .then((result: any) => {
         if (! result) {
             messaging().subscribeToTopic(VERSION);
+            messaging().registerDeviceForRemoteMessages();
             AsyncStorage.setItem('setup', JSON.stringify({app_version: VERSION, last_setup: (new Date).toString()}));
         } 
     })

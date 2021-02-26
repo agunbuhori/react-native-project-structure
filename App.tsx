@@ -14,6 +14,7 @@ import AppNavigator from '@screens/AppNavigator';
 import { persistor, store } from '@store';
 import { PersistGate } from 'redux-persist/integration/react';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import 'react-native-gesture-handler';
 
 declare const global: {HermesInternal: null | {}};
 

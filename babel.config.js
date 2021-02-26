@@ -13,12 +13,14 @@ module.exports = {
       "root": ["./src"],
       "alias": {
         "test": "./__tests__",
+        "@assets": "./src/assets",
         "@config": "./src/config",
         "@screens": "./src/screens",
         "@components": "./src/components",
         "@store": "./src/store",
         "@constants": "./src/constants",
-        "@utils": "./src/utils"
+        "@utils": "./src/utils",
+        "@global": "./src/global",
       }
     }]
   ]
