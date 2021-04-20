@@ -11,6 +11,7 @@ import Image from 'react-native-scalable-image';
 import Server from '@config/Server';
 
 export interface Props {}
+
 const PrayingSchedule: React.FC<Props> = (props) => {
     const [location, setLocation] = useState({});
 
@@ -32,12 +33,10 @@ const PrayingSchedule: React.FC<Props> = (props) => {
             style={tailwind('w-full')}
             source={require('@assets/img/morning.jpg')}>
                 <View style={tailwind('p-4 items-center')}>
+                    <Text style={tailwind('text-4xl text-white')}>{moment().format('HH:mm')}</Text>
                 </View>
-                <View style={tailwind('p-4 w-full flex-row items-center')}>
-                    <View style={tailwind('flex-1 flex-row')}>
-                        <Text style={{fontSize: 20, ...tailwind('text-white')}}>{moment().format('HH:mm')}</Text>
-                    </View>
-                    <View style={tailwind('flex-2 flex-row')}>
+                <View style={tailwind('p-4 w-full flex-row justify-between')}>
+                    <View style={tailwind('flex-row')}>
                         <View style={tailwind('mr-2 justify-center')}>
                             <Image source={require('@assets/icons/calendar.png')} width={24}/>
                         </View>
@@ -47,7 +46,7 @@ const PrayingSchedule: React.FC<Props> = (props) => {
                         </View>
                     </View>
 
-                    <View style={tailwind('flex-2 flex-row justify-end')}>
+                    <View style={tailwind('flex-row justify-end')}>
                         <View style={tailwind('mr-2 justify-center')}>
                             <Image source={require('@assets/icons/location.png')} width={24}/>
                         </View>
@@ -62,7 +61,15 @@ const PrayingSchedule: React.FC<Props> = (props) => {
     )
 }
 
-export { PrayingSchedule }
+const HomeMenu: React.FC<Props> = (props) => {
+    return (
+        <View>
+            <Text>Test</Text>
+        </View>
+    )
+}
+
+export { PrayingSchedule, HomeMenu }
 
 const styles = StyleSheet.create({
     praying_time: tailwind('px-3 py-1 bg-white rounded-full')
